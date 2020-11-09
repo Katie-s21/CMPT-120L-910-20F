@@ -1,14 +1,10 @@
 def sum_2d_array(two_d_array):
-    """
-    - Add code in the defined function to sum up the internal arrays. Returning an array of the sums.
-    
-    - Your input will be a 2d array
-    
-    - Output should be a 1d array
-    
-    - If a sub array is empty the sum is 0
-    """
-    pass
+    answers = list(map(sum, two_d_array))
+    print(answers)
+      
+   
+  
+
 
 if __name__ == "__main__":
     two_d_array = [
@@ -21,5 +17,11 @@ if __name__ == "__main__":
         [0]
         ]
     answers = sum_2d_array(two_d_array)
+
+
     
-    print(answers)
+    
+
+
+    
+   
