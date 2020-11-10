@@ -1,6 +1,6 @@
 def sum_2d_array(two_d_array):
     answers = list(map(sum, two_d_array))
-    print(answers)
+    return(answers)
       
    
   
@@ -18,6 +18,7 @@ if __name__ == "__main__":
         ]
     answers = sum_2d_array(two_d_array)
 
+    print(answers)
 
     
     
