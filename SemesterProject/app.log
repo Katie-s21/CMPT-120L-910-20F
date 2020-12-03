@@ -119,3 +119,912 @@ INFO:root:Going to page 3!
 INFO:werkzeug:127.0.0.1 - - [22/Nov/2020 00:02:30] "[37mGET /hiya/ HTTP/1.1[0m" 200 -
 INFO:root:Going to page 3!
 INFO:werkzeug:127.0.0.1 - - [22/Nov/2020 00:02:31] "[37mGET /hiya/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:34:40] "[37mGET / HTTP/1.1[0m" 200 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /apple-touch-icon-precomposed.png [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:34:41] "[35m[1mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 500 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /apple-touch-icon.png [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:34:41] "[35m[1mGET /apple-touch-icon.png HTTP/1.1[0m" 500 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:34:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:36:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:36:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:36:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:36:58] "[37mGET /home/ HTTP/1.1[0m" 200 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:36:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:05] "[37mGET /home/ HTTP/1.1[0m" 200 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /hello/ [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:05] "[35m[1mGET /hello/ HTTP/1.1[0m" 500 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:08] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:08] "[37mGET /about/ HTTP/1.1[0m" 200 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:13] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+ERROR:app:Exception on /404 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 27, in four_oh_four
+    return render_template('four_oh_four.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:18] "[35m[1mGET /404 HTTP/1.1[0m" 500 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+WARNING:app:Switching to the 404 Page
+ERROR:app:Exception on /404/ [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 32, in page_not_found
+    return render_template('four_oh_four.html'), 404
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:37:30] "[35m[1mGET /404/ HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:36] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+ERROR:app:Exception on /404/ [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 27, in four_oh_four
+    return render_template('four_oh_four.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:36] "[35m[1mGET /404/ HTTP/1.1[0m" 500 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+ERROR:app:Exception on /404/ [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 27, in four_oh_four
+    return render_template('four_oh_four.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:38] "[35m[1mGET /404/ HTTP/1.1[0m" 500 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+ERROR:app:Exception on /404/ [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/app.py", line 27, in four_oh_four
+    return render_template('four_oh_four.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/katiesarnecky/Documents/GitHub/CMPT-120L-910-20F/SemesterProject/templates/four_oh_four.html", line 1, in top-level template code
+    {% include 'header.html' %}
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: header.html
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:39:38] "[35m[1mGET /404/ HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:48] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:53] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:53] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:54] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:41:54] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:42:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:48:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:49:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:49:03] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:49:03] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:49:04] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:49:04] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:53:08] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:53:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:54:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:55:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:55:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:55:53] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:55:54] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:00] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:00] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:03] "[33mGET /personality HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:06] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:06] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:10] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:56:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:57:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:57:03] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:57:04] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:58:23] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:58:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:58:29] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:58:30] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 13:58:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:41] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Going to the Header Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:44] "[37mGET /header/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:00:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:04:01] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:04:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:04:07] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:04:09] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:04:10] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:05:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:05:27] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:05:27] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:05:28] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:05:29] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:06:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:06:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:06:43] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:06:44] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:06:45] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:07:12] "[32mGET /home HTTP/1.1[0m" 308 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:07:12] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:08:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:08:49] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:08:49] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:08:51] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:08:52] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:09:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:09:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:09:48] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:09:48] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:09:49] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:44] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:45] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:53] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:57] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:57] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:11:59] "[33mGET /personality HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:12:01] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:13:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:13:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:13:58] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:13:59] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:14:00] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:16:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:16:09] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:16:10] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:16:12] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:53] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:53] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:54] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:56] "[32mGET /index HTTP/1.1[0m" 308 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:17:56] "[37mGET /index/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:52] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:53] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:55] "[32mGET /index HTTP/1.1[0m" 308 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:55] "[37mGET /index/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:58] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:20:58] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:21:04] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:21:04] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:21:06] "[32mGET /404 HTTP/1.1[0m" 308 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:21:06] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:24:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:24:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:24:45] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:24:46] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:26:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:26:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:26:51] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:26:52] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:27:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:28:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:28:02] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:28:04] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:29:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:29:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:29:46] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:29:47] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Going to the Header Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:30:39] "[37mGET /header/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:49] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:53] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:53] "[33mGET /hello/ HTTP/1.1[0m" 404 -
+INFO:root:Going to the Header Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:54] "[37mGET /header/ HTTP/1.1[0m" 200 -
+INFO:root:Going to the Header Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:31:55] "[37mGET /header/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:32:08] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:32:08] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:32:09] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:32:11] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:35:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:35:30] "[32mGET /home HTTP/1.1[0m" 308 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:35:30] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:35:32] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:15] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:24] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:24] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:32] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:33] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:36:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:37:41] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:37:41] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:37:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:37:46] "[32mGET /home HTTP/1.1[0m" 308 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:37:46] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:38:08] "[33mGET /home/404 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:38:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:38:13] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:38:15] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:27] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:27] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:28] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:29] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:37] "[32mGET /home HTTP/1.1[0m" 308 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:37] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:42] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:42] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:44] "[32mGET /home HTTP/1.1[0m" 308 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:39:44] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:40:46] "[37mGET /home/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Index Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:40:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:40:47] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:40:50] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:41:30] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:48:45] "[33mGET /home HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Personality Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:49] "[37mGET /personality HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:51] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:51] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:50:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:51:00] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:51:01] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:51:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:33] "[32mGET /contact HTTP/1.1[0m" 308 -
+INFO:root:Going to the Contact Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:33] "[37mGET /contact/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:36] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:36] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the Personality Page
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:38] "[37mGET /personality HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:40] "[32mGET /about HTTP/1.1[0m" 308 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:40] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:root:Going to the About Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:45] "[37mGET /about/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:46] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:app:Switching to the 404 Page, This is a test page so we don't need to error here.
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:47] "[37mGET /404/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:51] "[32mGET /contact HTTP/1.1[0m" 308 -
+INFO:root:Going to the Contact Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:51] "[37mGET /contact/ HTTP/1.1[0m" 200 -
+INFO:root:Welcome to the Home Page!
+INFO:werkzeug:127.0.0.1 - - [03/Dec/2020 14:58:54] "[37mGET / HTTP/1.1[0m" 200 -

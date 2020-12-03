@@ -6,24 +6,31 @@ logging.basicConfig(filename='app.log',level=logging.DEBUG)
 
 app = Flask(__name__)
 
+
 @app.route('/')
-def index():
-    return render_template("hello.html")
+def home():
+    logging.info('Welcome to the Home Page!')
+    return render_template('home.html')
 
-
-@app.route('/hello/')
-def hello_world():
-    logging.info('Welcome to page 2!')
-    return ('Hello Me!')
+@app.route('/personality')
+def personality():
+    app.logger.info("Switching to the Personality Page")
+    return render_template("personality.html")
     
+@app.route('/about/')
+def about():
+    logging.info('Going to the About Page!')
+    return render_template('about.html')
 
-@app.route('/hiya/')
-def hiya_world():
-    logging.info('Going to page 3!')
-    return ('Hiya everyone!')
+@app.route('/contact/')
+def contact():
+    logging.info('Going to the Contact Page!')
+    return render_template('contact.html')
 
-
-
+@app.route('/404/')
+def four_oh_four():
+    app.logger.info("Switching to the 404 Page, This is a test page so we don't need to error here.")
+    return render_template('four_oh_four.html')
 
 
 
