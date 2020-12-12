@@ -1,19 +1,28 @@
 {% include 'header.html' %}
 
+<style>
+    .myDiv {
+      border: 5px outset pink;
+      background-color: lavender; 
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+<div class="myDiv">
+    <h2>404 Page</h2>
+    <p>Error</p>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-5 text-center my-5">
-            <h1>This is the 404 Page!</h1>
+            <h2>Oops! Looks like something went wrong.</h2>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-5 text-center">
-            <h2>Wait! D: You're not supposed to be here...</h2>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-5 text-center">
-            <a href="/" class="btn btn-outline-secondary">Let's get you back to one of our actual pages!</a>
+            <a href="/" class="btn btn-success">Back to Home Page</a>
         </div>
     </div>
 </div>
